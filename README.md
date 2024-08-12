@@ -276,5 +276,5 @@ def lambda_handler(event, context):
 
 Didn't work:
 
-AWS Instance Scheduler
-Enabling-VPC-Flow-Logs-with-Automation
+- AWS Instance Scheduler
+- Enabling-VPC-Flow-Logs-with-Automation

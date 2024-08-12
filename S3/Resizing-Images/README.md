@@ -13,7 +13,7 @@ nd-s3-demo-source-bucket
 
 ## Create the function deployment package
 
-n the same directory in which you created your lambda_function.py file, create a new directory named package and install the Pillow (PIL) library and the AWS SDK for Python (Boto3). Although the Lambda Python runtime includes a version of the Boto3 SDK, we recommend that you add all of your function's dependencies to your deployment package, even if they are included in the runtime. For more information, see Runtime dependencies in Python.
+In the same directory in which you created your lambda_function.py file, create a new directory named package and install the Pillow (PIL) library and the AWS SDK for Python (Boto3). Although the Lambda Python runtime includes a version of the Boto3 SDK, we recommend that you add all of your function's dependencies to your deployment package, even if they are included in the runtime. For more information, see Runtime dependencies in Python.
 
 ```
 mkdir package
