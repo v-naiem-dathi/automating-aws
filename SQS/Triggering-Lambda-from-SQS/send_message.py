@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.7
+#!/usr/bin/env python3.11
 # -*- coding: utf-8 -*-
 import argparse
 import logging
@@ -16,16 +16,18 @@ parser.add_argument("--interval", "-i", required=True,
 parser.add_argument("--message", "-m", help="message to send")
 parser.add_argument("--log", "-l", default="INFO",
                     help="logging level")
+parser.add_argument("--log", "-l", default="INFO",
+                    help="logging level")
 args = parser.parse_args()
 
 if args.log:
-    logging.basicConfig(
-        format='[%(levelname)s] %(message)s', level=args.log)
-
+    logging.basicConfig(format='[%(levelname)s] %(message)s', level=args.log)
 else:
     parser.print_help(sys.stderr)
 
-sqs = boto3.client('sqs')
+session = boto3.Session(profile_name='acg-course')
+
+sqs = session.client('sqs')
 
 response = sqs.get_queue_url(QueueName=args.queue_name)
 
