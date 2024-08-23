@@ -1,3 +1,9 @@
+# A Cloud Guru Links
+
+https://learn.acloud.guru/course/d15d3060-fa99-4dbd-90c1-c1b9abb70f53
+
+# Git Hub
+
 https://github.com/linuxacademy/la-aws-security_specialty/tree/master/Enabling-VPC-Flow-Logs-with-Automation
 
 https://github.com/linuxacademy/content-lambda-boto3
